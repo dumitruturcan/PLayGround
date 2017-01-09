@@ -7,7 +7,6 @@ import java.util.*;
 
 
 public class LambdaRunner extends TestClass {
-
     public LambdaRunner() {
         super(LambdaRunner.class);
     }
@@ -19,7 +18,6 @@ public class LambdaRunner extends TestClass {
 
     @Test
     public void test() {
-
         List<Person> people = Arrays.asList(
                 new Person("Dumitru", "Turcan", 20),
                 new Person("Sergiu", "Shatkovskii", 21),
@@ -28,17 +26,11 @@ public class LambdaRunner extends TestClass {
         );
 
         Collections.sort(people, (person1, person2) -> person2.getLastName().compareTo(person1.getLastName()));
-
         System.out.println("SORTED LIST:");
-
         printPeopleThatMathcCondition(people, p -> true);
-
         System.out.println("STARTING WITH 'T' ");
-
         printPeopleThatMathcCondition(people, p -> p.getLastName().startsWith("T"));
-
         System.out.println("STARTING WITH 'A' ");
-
         printPeopleThatMathcCondition(people, p -> p.getFirstName().startsWith("A"));
     }
 
@@ -48,7 +40,6 @@ public class LambdaRunner extends TestClass {
     }
 
     private void printPeopleThatMathcCondition(List<Person> people, MyCondition condition) {
-
         for (Person person : people)
             if (condition.test(person)) System.out.println(person.toString());
     }

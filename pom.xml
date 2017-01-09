@@ -12,6 +12,7 @@
         <module>infoarena</module>
         <module>spring</module>
         <module>lambdaTraining</module>
+        <module>dataStructures</module>
     </modules>
 
     <dependencies>
