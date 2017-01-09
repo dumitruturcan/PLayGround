@@ -13,6 +13,7 @@
         <module>spring</module>
         <module>lambdaTraining</module>
         <module>dataStructures</module>
+        <module>cucumber</module>
     </modules>
 
     <dependencies>
@@ -21,6 +22,21 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.0.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.0.2</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 </project>
