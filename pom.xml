@@ -10,10 +10,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>infoarena</module>
-        <module>spring</module>
         <module>lambdaTraining</module>
         <module>dataStructures</module>
         <module>cucumber</module>
+        <module>collections</module>
+        <module>laboratorjava</module>
     </modules>
 
     <dependencies>
