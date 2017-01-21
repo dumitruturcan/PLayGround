@@ -1,6 +1,5 @@
 Feature: First Cucumber Scenario
 
-  @Run
   Scenario: Test Scenario
     Given the following animals:
       | cow   |
